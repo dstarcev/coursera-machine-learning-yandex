@@ -63,3 +63,6 @@ target/
 
 # vagrant
 .vagrant/
+
+# questions
+q[0-9]*.txt
