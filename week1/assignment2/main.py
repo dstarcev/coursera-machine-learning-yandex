@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 
 with open("q1.txt", "w") as output:
-	data = pd.read_csv('titanic.csv', index_col='PassengerId')
+	data = pd.read_csv('../titanic.csv', index_col='PassengerId')
 	data['Sex'] = pd.factorize(data['Sex'])[0]
 	complete = data[np.isnan(data.Age) == False]
 	X = complete[['Pclass', 'Fare', 'Age', 'Sex']]

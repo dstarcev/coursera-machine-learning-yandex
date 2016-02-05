@@ -1,5 +1,5 @@
 import pandas
-data = pandas.read_csv('titanic.csv', index_col='PassengerId')
+data = pandas.read_csv('../titanic.csv', index_col='PassengerId')
 
 with open("q1.txt", "w") as output:
     result = data.Sex.value_counts()
